@@ -1,0 +1,14 @@
+# ---- Core App Framework ----
+streamlit>=1.31.0
+
+# ---- Data Handling ----
+pandas>=2.2.0
+numpy>=1.26.0
+
+# ---- Translation & Speech ----
+mtranslate==1.8
+gTTS>=2.5.1
+
+# ---- Utility Packages ----
+requests>=2.31.0
+beautifulsoup4>=4.12.3
