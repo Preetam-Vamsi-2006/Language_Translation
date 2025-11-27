@@ -6,7 +6,7 @@ from gtts import gTTS #google text to speech
 import base64
 
 # read language dataset
-df = pd.read_csv(r'C:\Users\golla\AVSCODE\CapstoneProjectsAll\Language Converter\MULTIPLE LANGUAGE TRANSLATION\language.csv')
+df = pd.read_csv('language.csv')
 df.dropna(inplace=True)
 lang = df['name'].to_list()
 langlist=tuple(lang)
@@ -112,3 +112,4 @@ if len(inputtext) > 0 :
                 st.markdown(get_binary_file_downloader_html("lang.mp3", 'Audio File'), unsafe_allow_html=True)
     except Exception as e:
         st.error(e)
+
